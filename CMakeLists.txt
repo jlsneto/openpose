@@ -403,7 +403,7 @@ else (${WITH_EIGEN} MATCHES "NONE")
     # Download it
     set(OP_URL "http://bitbucket.org/eigen/eigen/get/")
     set(FIND_LIB_PREFIX ${CMAKE_SOURCE_DIR}/3rdparty/)
-    download_zip("3.3.7.zip" ${OP_URL} ${FIND_LIB_PREFIX} 0d9c8496922d5c07609b9f3585f00e49)
+    download_zip("3.3.7.zip" ${OP_URL} ${FIND_LIB_PREFIX} d41d8cd98f00b204e9800998ecf8427e)
     # Set path
     set(EIGEN3_INCLUDE_DIRS "3rdparty/eigen/include/")
   # Leave to CMake to find it
