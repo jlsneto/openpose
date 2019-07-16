@@ -401,9 +401,9 @@ else (${WITH_EIGEN} MATCHES "NONE")
   # OpenPose download/builds Eigen
   if (${WITH_EIGEN} MATCHES "BUILD")
     # Download it
-    set(OP_URL "http://posefs1.perception.cs.cmu.edu/OpenPose/3rdparty/")
+    set(OP_URL "http://bitbucket.org/eigen/eigen/get/")
     set(FIND_LIB_PREFIX ${CMAKE_SOURCE_DIR}/3rdparty/)
-    download_zip("eigen_2018_05_23.zip" ${OP_URL} ${FIND_LIB_PREFIX} 29B9B2FD4679D587BB67467F09EE8365)
+    download_zip("3.3.7.zip" ${OP_URL} ${FIND_LIB_PREFIX} 0d9c8496922d5c07609b9f3585f00e49)
     # Set path
     set(EIGEN3_INCLUDE_DIRS "3rdparty/eigen/include/")
   # Leave to CMake to find it
