@@ -401,9 +401,9 @@ else (${WITH_EIGEN} MATCHES "NONE")
   # OpenPose download/builds Eigen
   if (${WITH_EIGEN} MATCHES "BUILD")
     # Download it
-    set(OP_URL "https://srv-file4.gofile.io/download/KDRT3Z/")
-    set(FIND_LIB_PREFIX ${CMAKE_SOURCE_DIR}/3rdparty)
-    download_zip("eigen.zip" ${OP_URL} ${FIND_LIB_PREFIX} d41d8cd98f00b204e9800998ecf8427e)
+    #set(OP_URL "https://srv-file4.gofile.io/download/KDRT3Z/")
+    #set(FIND_LIB_PREFIX ${CMAKE_SOURCE_DIR}/3rdparty)
+    #download_zip("eigen.zip" ${OP_URL} ${FIND_LIB_PREFIX} d41d8cd98f00b204e9800998ecf8427e)
     # Set path
     set(EIGEN3_INCLUDE_DIRS "3rdparty/eigen/include/")
   # Leave to CMake to find it
