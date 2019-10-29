@@ -171,7 +171,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=OpenPose
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.5.0
+CMAKE_PROJECT_VERSION:STATIC=1.5.1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
@@ -180,7 +180,7 @@ CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
 CMAKE_PROJECT_VERSION_MINOR:STATIC=5
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_PATCH:STATIC=0
+CMAKE_PROJECT_VERSION_PATCH:STATIC=1
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
@@ -295,7 +295,7 @@ CUDA_HOST_COMPILATION_CPP:BOOL=ON
 CUDA_HOST_COMPILER:FILEPATH=C:/cygwin64/bin/gcc.exe
 
 //Path to a program.
-CUDA_NVCC_EXECUTABLE:FILEPATH=CUDA_NVCC_EXECUTABLE-NOTFOUND
+CUDA_NVCC_EXECUTABLE:FILEPATH=/cygdrive/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/bin/nvcc.exe
 
 //Semi-colon delimit multiple arguments. during all build types.
 CUDA_NVCC_FLAGS:STRING=
@@ -324,10 +324,10 @@ CUDA_SDK_ROOT_DIR:PATH=CUDA_SDK_ROOT_DIR-NOTFOUND
 CUDA_SEPARABLE_COMPILATION:BOOL=OFF
 
 //Path to a file.
-CUDA_TOOLKIT_INCLUDE:PATH=CUDA_TOOLKIT_INCLUDE-NOTFOUND
+CUDA_TOOLKIT_INCLUDE:PATH=/cygdrive/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1/include
 
 //Toolkit location.
-CUDA_TOOLKIT_ROOT_DIR:PATH=CUDA_TOOLKIT_ROOT_DIR-NOTFOUND
+CUDA_TOOLKIT_ROOT_DIR:PATH=/cygdrive/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1
 
 //Print out the commands run while compiling the CUDA source file.
 //  With the Makefile generator this defaults to VERBOSE variable
@@ -335,20 +335,68 @@ CUDA_TOOLKIT_ROOT_DIR:PATH=CUDA_TOOLKIT_ROOT_DIR-NOTFOUND
 // option.
 CUDA_VERBOSE_BUILD:BOOL=OFF
 
+//Version of CUDA as computed from nvcc.
+CUDA_VERSION:STRING=10.1
+
 //"cublas" library
 CUDA_cublas_LIBRARY:FILEPATH=CUDA_cublas_LIBRARY-NOTFOUND
 
-//"cublasemu" library
-CUDA_cublasemu_LIBRARY:FILEPATH=CUDA_cublasemu_LIBRARY-NOTFOUND
+//"cudadevrt" library
+CUDA_cudadevrt_LIBRARY:FILEPATH=CUDA_cudadevrt_LIBRARY-NOTFOUND
+
+//static CUDA runtime library
+CUDA_cudart_static_LIBRARY:FILEPATH=CUDA_cudart_static_LIBRARY-NOTFOUND
 
 //"cufft" library
 CUDA_cufft_LIBRARY:FILEPATH=CUDA_cufft_LIBRARY-NOTFOUND
 
-//"cufftemu" library
-CUDA_cufftemu_LIBRARY:FILEPATH=CUDA_cufftemu_LIBRARY-NOTFOUND
+//"cupti" library
+CUDA_cupti_LIBRARY:FILEPATH=CUDA_cupti_LIBRARY-NOTFOUND
 
 //"curand" library
 CUDA_curand_LIBRARY:FILEPATH=CUDA_curand_LIBRARY-NOTFOUND
+
+//"cusolver" library
+CUDA_cusolver_LIBRARY:FILEPATH=CUDA_cusolver_LIBRARY-NOTFOUND
+
+//"cusparse" library
+CUDA_cusparse_LIBRARY:FILEPATH=CUDA_cusparse_LIBRARY-NOTFOUND
+
+//"nppc" library
+CUDA_nppc_LIBRARY:FILEPATH=CUDA_nppc_LIBRARY-NOTFOUND
+
+//"nppial" library
+CUDA_nppial_LIBRARY:FILEPATH=CUDA_nppial_LIBRARY-NOTFOUND
+
+//"nppicc" library
+CUDA_nppicc_LIBRARY:FILEPATH=CUDA_nppicc_LIBRARY-NOTFOUND
+
+//"nppicom" library
+CUDA_nppicom_LIBRARY:FILEPATH=CUDA_nppicom_LIBRARY-NOTFOUND
+
+//"nppidei" library
+CUDA_nppidei_LIBRARY:FILEPATH=CUDA_nppidei_LIBRARY-NOTFOUND
+
+//"nppif" library
+CUDA_nppif_LIBRARY:FILEPATH=CUDA_nppif_LIBRARY-NOTFOUND
+
+//"nppig" library
+CUDA_nppig_LIBRARY:FILEPATH=CUDA_nppig_LIBRARY-NOTFOUND
+
+//"nppim" library
+CUDA_nppim_LIBRARY:FILEPATH=CUDA_nppim_LIBRARY-NOTFOUND
+
+//"nppist" library
+CUDA_nppist_LIBRARY:FILEPATH=CUDA_nppist_LIBRARY-NOTFOUND
+
+//"nppisu" library
+CUDA_nppisu_LIBRARY:FILEPATH=CUDA_nppisu_LIBRARY-NOTFOUND
+
+//"nppitc" library
+CUDA_nppitc_LIBRARY:FILEPATH=CUDA_nppitc_LIBRARY-NOTFOUND
+
+//"npps" library
+CUDA_npps_LIBRARY:FILEPATH=CUDA_npps_LIBRARY-NOTFOUND
 
 //Path to cuDNN include directory.
 CUDNN_INCLUDE:PATH=CUDNN_INCLUDE-NOTFOUND
@@ -443,6 +491,9 @@ Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=Protobuf_PROTOC_LIBRARY_RELEASE-NOTFOUN
 
 //Build OpenPose with cuDNN library support.
 USE_CUDNN:BOOL=ON
+
+//No help, variable specified on the command line.
+WITH-EIGEN:UNINITIALIZED=BUILD
 
 //Add OpenPose 3D renderer module (it requires FreeGLUT library).
 WITH_3D_RENDERER:BOOL=OFF
@@ -670,25 +721,57 @@ CUDA_SEPARABLE_COMPILATION-ADVANCED:INTERNAL=1
 CUDA_TOOLKIT_INCLUDE-ADVANCED:INTERNAL=1
 //This is the value of the last time CUDA_TOOLKIT_ROOT_DIR was
 // set successfully.
-CUDA_TOOLKIT_ROOT_DIR_INTERNAL:INTERNAL=CUDA_TOOLKIT_ROOT_DIR-NOTFOUND
+CUDA_TOOLKIT_ROOT_DIR_INTERNAL:INTERNAL=/cygdrive/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1
 //This is the value of the last time CUDA_TOOLKIT_TARGET_DIR was
 // set successfully.
-CUDA_TOOLKIT_TARGET_DIR_INTERNAL:INTERNAL=CUDA_TOOLKIT_ROOT_DIR-NOTFOUND
+CUDA_TOOLKIT_TARGET_DIR_INTERNAL:INTERNAL=/cygdrive/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v10.1
 CUDA_USE_STATIC_CUDA_RUNTIME:INTERNAL=OFF
 //ADVANCED property for variable: CUDA_VERBOSE_BUILD
 CUDA_VERBOSE_BUILD-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_VERSION
+CUDA_VERSION-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_cublas_LIBRARY
 CUDA_cublas_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cublasemu_LIBRARY
-CUDA_cublasemu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cudadevrt_LIBRARY
+CUDA_cudadevrt_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cudart_static_LIBRARY
+CUDA_cudart_static_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_cufft_LIBRARY
 CUDA_cufft_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cufftemu_LIBRARY
-CUDA_cufftemu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cupti_LIBRARY
+CUDA_cupti_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CUDA_curand_LIBRARY
 CUDA_curand_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusolver_LIBRARY
+CUDA_cusolver_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_cusparse_LIBRARY
+CUDA_cusparse_LIBRARY-ADVANCED:INTERNAL=1
 //Location of make2cmake.cmake
 CUDA_make2cmake:INTERNAL=/cygdrive/c/Users/handtalk/.CLion2019.1/system/cygwin_cmake/share/cmake-3.14.3/Modules/FindCUDA/make2cmake.cmake
+//ADVANCED property for variable: CUDA_nppc_LIBRARY
+CUDA_nppc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppial_LIBRARY
+CUDA_nppial_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicc_LIBRARY
+CUDA_nppicc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppicom_LIBRARY
+CUDA_nppicom_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppidei_LIBRARY
+CUDA_nppidei_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppif_LIBRARY
+CUDA_nppif_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppig_LIBRARY
+CUDA_nppig_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppim_LIBRARY
+CUDA_nppim_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppist_LIBRARY
+CUDA_nppist_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppisu_LIBRARY
+CUDA_nppisu_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_nppitc_LIBRARY
+CUDA_nppitc_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CUDA_npps_LIBRARY
+CUDA_npps_LIBRARY-ADVANCED:INTERNAL=1
 //Location of parse_cubin.cmake
 CUDA_parse_cubin:INTERNAL=/cygdrive/c/Users/handtalk/.CLion2019.1/system/cygwin_cmake/share/cmake-3.14.3/Modules/FindCUDA/parse_cubin.cmake
 //Location of run_nvcc.cmake
