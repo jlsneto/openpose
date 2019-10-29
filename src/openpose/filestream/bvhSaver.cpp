@@ -84,6 +84,7 @@ namespace op
         }
     }
 
+
     BvhSaver::~BvhSaver()
     {
         try
