@@ -810,7 +810,7 @@ namespace op
             }
             log("", Priority::Low, __LINE__, __FUNCTION__, __FILE__);
             // Write joint angles as *.bvh file on hard disk
-            log("USE_3D_ADAM_MODEL ---> "+ USE_3D_ADAM_MODEL, Priority::High);
+            log("<--- Antes de executar bvhwriter --->", Priority::High);
 #ifdef USE_3D_ADAM_MODEL
             if (!wrapperStructOutput.writeBvh.empty())
             {
