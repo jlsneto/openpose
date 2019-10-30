@@ -30,8 +30,7 @@ namespace op
         udpHost{udpHost_},
         udpPort{udpPort_}
     {
-        log("TESTE...", writeBvh, writeBvh_);
-        op::writeBvh(writeBvh);
+        log("Habilitado openpose export bvh", Priority::High);
 
 //        try
 //        {

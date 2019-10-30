@@ -810,10 +810,12 @@ namespace op
             }
             log("", Priority::Low, __LINE__, __FUNCTION__, __FILE__);
             // Write joint angles as *.bvh file on hard disk
+            log("USE_3D_ADAM_MODEL ---> "+ USE_3D_ADAM_MODEL, Priority::High);
 #ifdef USE_3D_ADAM_MODEL
             if (!wrapperStructOutput.writeBvh.empty())
             {
                 log("", Priority::Low, __LINE__, __FUNCTION__, __FILE__);
+                log("Entrou na função de salvar bvh", Priority::High);
                 const auto bvhSaver = std::make_shared<BvhSaver>(
                     wrapperStructOutput.writeBvh, JointAngleEstimation::getTotalModel(), originalVideoFps
                 );
